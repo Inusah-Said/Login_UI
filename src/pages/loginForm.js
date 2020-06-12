@@ -11,76 +11,91 @@ const LoginForm = () => {
 				<img src={Person} style={{ height: 500 }} alt="Personal Auth" />
 			</Grid>
 			<Grid item xs={6} justify="center" alignItems="center">
-				{/* <img
-					src="src\components\wave.png"
-					style={{ height: "100vh" }}
-				></img> */}
-				<img
-					src={SVG3}
-					alt="Profile Avatar"
-					style={{ height: 200, width: 200, paddingBottom: 50 }}
-				/>
-				<h1
+				<div
 					style={{
-						fontSize: 30,
-						fontFamily: "Poppins",
-						paddingBottom: 20,
+						justifyContent: "center",
+						alignContent: "center",
+						textAlign: "center",
 					}}
 				>
-					Welcome
-				</h1>
-				<form autoComplete="off" noValidate style={{ width: 350 }}>
-					<TextField
-						label="Username"
+					<img
+						src={SVG3}
+						alt="Profile Avatar"
 						style={{
-							width: 350,
-							fontfamily: "Poppins",
-							paddingBottom: 30,
+							height: 200,
+							width: 200,
+							paddingBottom: 50,
 						}}
-					></TextField>
-					<br />
-					<TextField
-						label="Password"
-						style={{ width: 350, fontFamily: "Poppins" }}
-						fullWidth
 					/>
-					<br />
-					<a
-						href="#"
+				</div>
+				<div
+					style={{
+						textAlign: "center",
+						justify: "center",
+					}}
+				>
+					<h1
 						style={{
-							textAlign: "right",
-							display: "block",
-							textDecoration: "none",
+							fontSize: 30,
 							fontFamily: "Poppins",
+							paddingBottom: 20,
 						}}
 					>
-						Forgot Password?
-					</a>
-					<br />
-					<div
-						style={{
-							display: "block",
-							textAlign: "center",
-							alignItems: "center",
-							justifyContent: "center",
-							alignContent: "center",
-						}}
-					>
-						<Button
+						Welcome
+					</h1>
+
+					<form autoComplete="off" noValidate>
+						<TextField
+							label="Username"
 							style={{
-								width: 150,
-								backgroundColor: "rgb(108, 99, 255) ",
-								fontFamily: "Poppins",
-								borderRadius: 30,
+								width: 350,
+								fontfamily: "Poppins",
+								paddingBottom: 30,
+							}}
+						></TextField>
+						<br />
+						<TextField
+							label="Password"
+							style={{ width: 350, fontFamily: "Poppins" }}
+							fullWidth
+						/>
+						<br />
+						<a
+							href="#"
+							style={{
 								textAlign: "center",
-								width: 300,
-								color: "#fff",
+								display: "block",
+								textDecoration: "none",
+								fontFamily: "Poppins",
 							}}
 						>
-							Login
-						</Button>
-					</div>
-				</form>
+							Forgot Password?
+						</a>
+						<br />
+						<div
+							style={{
+								// display: "block",
+								textAlign: "center",
+								justify: "center",
+								// alignContent: "center",
+							}}
+						>
+							<Button
+								style={{
+									width: 150,
+									backgroundColor: "rgb(108, 99, 255) ",
+									fontFamily: "Poppins",
+									borderRadius: 30,
+									textAlign: "center",
+									width: 300,
+									color: "#fff",
+								}}
+							>
+								Login
+							</Button>
+						</div>
+					</form>
+				</div>
 			</Grid>
 		</Grid>
 	);
