@@ -26,7 +26,7 @@ const LoginForm = () => {
 						style={{
 							height: 200,
 							width: 200,
-							paddingBottom: 50,
+							paddingBottom: 20,
 						}}
 					/>
 				</div>
@@ -41,6 +41,7 @@ const LoginForm = () => {
 							fontSize: 30,
 							fontFamily: "Poppins",
 							paddingBottom: 20,
+							opacity: 0.6,
 						}}
 					>
 						Welcome
@@ -53,7 +54,7 @@ const LoginForm = () => {
 							style={{
 								width: 350,
 								fontfamily: "Poppins",
-								paddingBottom: 30,
+								paddingBottom: 20,
 							}}
 						></TextField>
 						<br />
@@ -64,12 +65,14 @@ const LoginForm = () => {
 						/>
 						<br />
 						<a
-							href="#"
+							href="/index"
 							style={{
+								paddingTop: 10,
 								textAlign: "center",
 								display: "block",
 								textDecoration: "none",
 								fontFamily: "Poppins",
+								color: "rgb(108, 99, 255) ",
 							}}
 							className="forgot"
 						>
@@ -91,7 +94,6 @@ const LoginForm = () => {
 									fontFamily: "Poppins",
 									borderRadius: 30,
 									textAlign: "center",
-									width: 300,
 									color: "#fff",
 								}}
 							>
