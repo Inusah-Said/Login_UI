@@ -7,7 +7,8 @@ import Grid from "@material-ui/core/Grid";
 const LoginForm = () => {
 	return (
 		<Grid container justify="center" alignItems="center">
-			<Grid item xs={6}>
+			<Grid className="things" item xs={2}></Grid>
+			<Grid className="things" item xs={4}>
 				<img src={Person} style={{ height: 500 }} alt="Personal Auth" />
 			</Grid>
 			<Grid item xs={6} justify="center" alignItems="center">
@@ -17,6 +18,7 @@ const LoginForm = () => {
 						alignContent: "center",
 						textAlign: "center",
 					}}
+					className="image"
 				>
 					<img
 						src={SVG3}
@@ -44,8 +46,9 @@ const LoginForm = () => {
 						Welcome
 					</h1>
 
-					<form autoComplete="off" noValidate>
+					<form autoComplete="off" noValidate className="form">
 						<TextField
+							className="input"
 							label="Username"
 							style={{
 								width: 350,
@@ -55,9 +58,9 @@ const LoginForm = () => {
 						></TextField>
 						<br />
 						<TextField
+							className="input"
 							label="Password"
 							style={{ width: 350, fontFamily: "Poppins" }}
-							fullWidth
 						/>
 						<br />
 						<a
@@ -68,6 +71,7 @@ const LoginForm = () => {
 								textDecoration: "none",
 								fontFamily: "Poppins",
 							}}
+							className="forgot"
 						>
 							Forgot Password?
 						</a>
