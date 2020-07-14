@@ -2,6 +2,7 @@ import React from "react";
 
 import SVG3 from "../components/undraw_profile_pic_ic5t.svg";
 import Person from "../components/undraw_personalization_triu.svg";
+import "./loginForm.css";
 import { TextField, Button } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 const LoginForm = () => {
@@ -9,9 +10,13 @@ const LoginForm = () => {
 		<Grid container justify="center" alignItems="center">
 			<Grid className="things" item xs={2}></Grid>
 			<Grid className="things" item xs={4}>
-				<img src={Person} style={{ height: 500 }} alt="Personal Auth" />
+				<img
+					src={Person}
+					style={{ height: "auto", width: "100%" }}
+					alt="Personal Auth"
+				/>
 			</Grid>
-			<Grid item xs={6} justify="center" alignItems="center">
+			<Grid item xs={6}>
 				<div
 					style={{
 						justifyContent: "center",
@@ -34,6 +39,7 @@ const LoginForm = () => {
 					style={{
 						textAlign: "center",
 						justify: "center",
+						paddingTop: 10,
 					}}
 				>
 					<h1
@@ -52,7 +58,7 @@ const LoginForm = () => {
 							className="input"
 							label="Username"
 							style={{
-								width: 350,
+								width: "50%",
 								fontfamily: "Poppins",
 								paddingBottom: 20,
 							}}
@@ -61,7 +67,7 @@ const LoginForm = () => {
 						<TextField
 							className="input"
 							label="Password"
-							style={{ width: 350, fontFamily: "Poppins" }}
+							style={{ width: "50%", fontFamily: "Poppins" }}
 						/>
 						<br />
 						<a
