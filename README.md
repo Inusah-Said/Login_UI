@@ -1,5 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+This is a login page i created with REACT JS. follow the below steps to get things up and runnimg.
 ## Available Scripts
 
 In the project directory, you can run:
